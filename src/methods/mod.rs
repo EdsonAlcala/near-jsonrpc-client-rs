@@ -86,6 +86,7 @@ pub mod light_client_proof;
 pub mod network_info;
 pub mod next_light_client_block;
 pub mod query;
+pub mod send_raw_tx;
 pub mod send_tx;
 pub mod status;
 pub mod tx;
@@ -183,6 +184,10 @@ mod common {
         tx: &near_primitives::transaction::SignedTransaction,
     ) -> Result<String, io::Error> {
         Ok(near_primitives::serialize::to_base64(&borsh::to_vec(&tx)?))
+    }
+
+    pub fn encode_signed_transaction(encoded_tx: Vec<u8>) -> Result<String, io::Error> {
+        Ok(near_primitives::serialize::to_base64(&encoded_tx))
     }
 
     // adv_*

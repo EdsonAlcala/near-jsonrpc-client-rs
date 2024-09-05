@@ -71,7 +71,7 @@ impl RpcMethod for RpcSendRawTransactionRequest {
     type Error = RpcTransactionError;
 
     fn method_name(&self) -> &str {
-        "send_raw_tx"
+        "send_tx"
     }
 
     fn params(&self) -> Result<serde_json::Value, io::Error> {

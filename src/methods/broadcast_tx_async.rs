@@ -29,8 +29,8 @@
 //! let rating = "4.5".parse::<f32>()?;
 //!
 //! let transaction = Transaction::V0(TransactionV0 {
-//!     signer_id: signer.account_id.clone(),
-//!     public_key: signer.public_key.clone(),
+//!     signer_id: signer.get_account_id(),
+//!     public_key: signer.public_key().clone(),
 //!     nonce: 10223934 + 1,
 //!     receiver_id: "nosedive.testnet".parse::<AccountId>()?,
 //!     block_hash: "AUDcb2iNUbsmCsmYGfGuKzyXKimiNcCZjBKTVsbZGnoH".parse()?,
@@ -48,7 +48,7 @@
 //! });
 //!
 //! let request = methods::broadcast_tx_async::RpcBroadcastTxAsyncRequest {
-//!     signed_transaction: transaction.sign(&near_crypto::Signer::InMemory(signer))
+//!     signed_transaction: transaction.sign(&signer)
 //! };
 //! # Ok(())
 //! # }
@@ -75,7 +75,7 @@ impl From<RpcBroadcastTxAsyncRequest>
     }
 }
 
-#[derive(Debug, Deserialize, Error)]
+#[derive(Debug, Serialize, Deserialize, Error)]
 #[error("{}", unreachable!("fatal: this error should never be constructed"))]
 pub enum RpcBroadcastTxAsyncError {}
 

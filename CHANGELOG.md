@@ -7,6 +7,53 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.17.0](https://github.com/near/near-jsonrpc-client-rs/compare/v0.16.1...v0.17.0) - 2025-05-09
+
+### Other
+
+- [**breaking**] updates near-* dependencies to 0.30 release ([#174](https://github.com/near/near-jsonrpc-client-rs/pull/174))
+
+## [0.16.1](https://github.com/near/near-jsonrpc-client-rs/compare/v0.16.0...v0.16.1) - 2025-03-27
+
+### Fixed
+
+- Fixed missing serde::Serialize on BroadcastTxAsync and GenesisConfig errors ([#171](https://github.com/near/near-jsonrpc-client-rs/pull/171))
+
+## [0.16.0](https://github.com/near/near-jsonrpc-client-rs/compare/v0.15.1...v0.16.0) - 2025-03-06
+
+### Other
+
+- [**breaking**] updates near-* dependencies to 0.29 release ([#169](https://github.com/near/near-jsonrpc-client-rs/pull/169))
+- added CODEOWNERS ([#167](https://github.com/near/near-jsonrpc-client-rs/pull/167))
+
+## [0.15.1](https://github.com/near/near-jsonrpc-client-rs/compare/v0.15.0...v0.15.1) - 2024-12-13
+
+### Other
+
+- fixed test compilation (#165)
+
+## [0.15.0](https://github.com/near/near-jsonrpc-client-rs/compare/v0.14.0...v0.15.0) - 2024-12-10
+
+### Other
+
+- [**breaking**] updates near-* dependencies to 0.28 release (#163)
+
+## [0.14.0](https://github.com/near/near-jsonrpc-client-rs/compare/v0.13.0...v0.14.0) - 2024-11-12
+
+### Added
+
+- added http errors 400, 408, 503, 500 ([#160](https://github.com/near/near-jsonrpc-client-rs/pull/160))
+
+### Other
+
+- [**breaking**] updates near-* dependencies to 0.27 release ([#161](https://github.com/near/near-jsonrpc-client-rs/pull/161))
+
+## [0.13.0](https://github.com/near/near-jsonrpc-client-rs/compare/v0.12.0...v0.13.0) - 2024-09-11
+
+### Other
+
+- [**breaking**] updates near-* dependencies to 0.26 release ([#157](https://github.com/near/near-jsonrpc-client-rs/pull/157))
+
 ## [0.12.0](https://github.com/near/near-jsonrpc-client-rs/compare/v0.11.0...v0.12.0) - 2024-08-21
 
 ### Other
